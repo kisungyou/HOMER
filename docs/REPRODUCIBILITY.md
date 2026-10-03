@@ -11,7 +11,7 @@ Run commands from the repository root after installing `requirements.txt`. It pi
 | Short numerical run | `python code/reproduce.py --smoke` | `runs/smoke/` |
 | Full numerical run | `python code/reproduce.py` | `runs/full/` |
 
-The reporting commands read the compact reference material in `results/`. They do not rerun simulations. Figure export produces PGF, PDF, and PNG files using shared Matplotlib `rcParams`, Computer Modern fonts, and the manuscript's display sizes. It requires pdfLaTeX with PGF and Poppler's `pdftoppm` on the executable path. Saved PNG previews and the notebooks need neither tool.
+The reporting commands read the compact reference material in `results/`. They do not rerun simulations. Figure export produces PGF, PDF, and PNG files using shared Matplotlib `rcParams`, Computer Modern fonts, and the manuscript's display sizes. It requires pdfLaTeX with PGF and Poppler's `pdftoppm` on the executable path. Inline notebook plots need neither tool. Each notebook constructs Matplotlib figures from the selected `paper`, `smoke`, or `full` results and displays them directly, without saving image files. Committed outputs show `paper` mode for GitHub readers.
 
 The numerical driver also accepts `--mode smoke` or `--mode full`. Settings are stored in `code/configs/`.
 
@@ -50,3 +50,11 @@ Adaptive estimation studies share observations and perturbations across methods.
 Coverage summaries use pointwise Wilson intervals for Monte Carlo uncertainty. Bootstrap intervals for errors, quantiles, and paired differences also describe simulation uncertainty. Normal Monte Carlo intervals for Student-t4 MSE are omitted because a finite fourth moment is unavailable. Numerical failures remain recorded in the outputs.
 
 Run `python -m pytest -q` for numerical and workflow checks. See [the validation record](VALIDATION.md) for the checks executed for this repository and [data provenance](DATA_SOURCES.md) for seeds and inputs.
+
+## Check notebook displays
+
+```bash
+python code/check_notebooks.py --mode paper smoke full
+```
+
+This executes all three notebooks in each selected mode, checks every figure cell for inline image output, and verifies that no external image files were created or changed. Numerical runs still write their results under `runs/`. To refresh the committed GitHub previews, use `python code/check_notebooks.py --mode paper --write-paper`; this embeds the images in the notebook files themselves.

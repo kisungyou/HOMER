@@ -2,14 +2,13 @@
   "date": "2026-10-03",
   "python": "3.12.14",
   "platform": "macOS arm64",
-  "tests_passed": 113,
+  "tests_passed": 123,
   "notebooks_executed": [
     "scalar.ipynb",
     "functional.ipynb",
     "covariance_wearable.ipynb"
   ],
-  "notebook_mode": "paper",
-  "committed_notebook_outputs": false,
+  "committed_notebook_outputs": true,
   "rebuild_saved_figures": "3 PNG previews byte-identical; PGF and PDF also generated",
   "rebuild_saved_tables": "5 LaTeX tables byte-identical",
   "full_comparison": "16 CSV files and 6 array archives agree at rtol=1e-10, atol=1e-12; timing fields excluded",
@@ -118,5 +117,26 @@
         }
       }
     }
+  },
+  "notebook_validation": {
+    "modes_executed": [
+      "paper",
+      "smoke",
+      "full"
+    ],
+    "execution_count": 9,
+    "inline_figures_per_mode": {
+      "scalar.ipynb": 1,
+      "functional.ipynb": 2,
+      "covariance_wearable.ipynb": 2
+    },
+    "total_inline_figures": 15,
+    "embedded_mode": "paper",
+    "external_figure_files_created_or_changed": false,
+    "fresh_studies_executed": [
+      "smoke",
+      "full"
+    ],
+    "command": "python code/check_notebooks.py --mode paper smoke full --write-paper"
   }
 }

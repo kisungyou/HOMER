@@ -21,3 +21,5 @@ jobs:
         run: |
           python code/reproduce.py --smoke
           python code/reproduce.py --smoke --resume
+      - name: Inline notebook figures (smoke)
+        run: python code/check_notebooks.py --mode smoke

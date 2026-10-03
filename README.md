@@ -19,9 +19,9 @@ python code/replot_figures.py
 python code/summarize_results.py
 ```
 
-The last two commands rebuild Figures 1–3 and the experimental LaTeX tables from the supplied summaries. New files go to `runs/paper/`; the reference material in `results/` is preserved. Figure export requires pdfLaTeX with PGF and Poppler's `pdftoppm`. Tests, numerical runs, and table generation do not require TeX.
+The last two commands rebuild Figures 1–3 and the experimental LaTeX tables from the supplied summaries. New files go to `runs/paper/`; the reference material in `results/` is preserved. Figure export requires pdfLaTeX with PGF and Poppler's `pdftoppm`. Tests, inline notebook plots, numerical runs, and table generation do not require TeX.
 
-For an interactive introduction, run `jupyter lab` and open [scalar.ipynb](notebooks/scalar.ipynb), [functional.ipynb](notebooks/functional.ipynb), or [covariance_wearable.ipynb](notebooks/covariance_wearable.ipynb). They read saved summaries and display figure previews by default, without rerunning experiments or downloading data.
+For an interactive introduction, run `jupyter lab` and open [scalar.ipynb](notebooks/scalar.ipynb), [functional.ipynb](notebooks/functional.ipynb), or [covariance_wearable.ipynb](notebooks/covariance_wearable.ipynb). Every mode plots directly from its selected results inside the notebook, without saving external figure files. The default `paper` mode reads the saved results, and its embedded outputs are visible on GitHub. Set `MODE` to `smoke` or `full` and run all cells to display fresh results; no TeX installation is needed.
 
 ## Reproduce the manuscript
 
@@ -45,7 +45,7 @@ python code/reproduce.py --figures --audit-targets --resume
 
 Fresh experiments write to `runs/smoke/` or `runs/full/`. Smoke runs reduce replication counts and check execution; they do not reproduce the paper's Monte Carlo conclusions. Full runs regenerate the replicate records and arrays omitted from this compact repository. The supplied summaries and small plot inputs suffice to regenerate the manuscript figures without a full run.
 
-GitHub Actions runs the tests and smoke examples on pushes and pull requests.
+GitHub Actions runs the tests, smoke examples, and all three notebooks in smoke mode, checking that every figure appears inline and no external figure files are written.
 
 See [Reproducibility](docs/REPRODUCIBILITY.md) for study selection, output locations, and numerical scope; [Data sources](docs/DATA_SOURCES.md) for provenance; and [Validation](docs/VALIDATION.md) for executed checks.
 
