@@ -1,0 +1,14 @@
+{
+  "seed": 20260916,
+  "reps_per_cell": 2000,
+  "cells": 26,
+  "runtime_seconds": 4.666576125193387,
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "python": "3.11.4",
+  "root_tolerance": 1e-13,
+  "certificate_se_fraction": 0.001,
+  "finite_sum": "All m+1 PMF terms, normalized; floating underflow below representable mass, no intentional truncation",
+  "gaussian_quadrature": "[-12,12], tail <4e-33 and bounded score contribution <=lambda^2 times tail",
+  "code_sha256": "30ca6c87ab5c1671f52fd232138ad4a2aa866313d9d4c2088cfcfd76a892f337"
+}

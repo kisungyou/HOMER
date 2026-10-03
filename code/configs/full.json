@@ -1,0 +1,8 @@
+{
+  "mode": "full",
+  "scalar_replications": 2000,
+  "functional_replications": 500,
+  "covariance_replications": 500,
+  "bootstrap_replications": 2000,
+  "purpose": "Complete manuscript simulation designs, seeds, and replication counts."
+}

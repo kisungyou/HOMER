@@ -1,0 +1,8 @@
+{
+  "mode": "smoke",
+  "scalar_replications": 32,
+  "functional_replications": 8,
+  "covariance_replications": 8,
+  "bootstrap_replications": 64,
+  "purpose": "Workflow validation only; reduced Monte Carlo counts do not reproduce manuscript conclusions."
+}

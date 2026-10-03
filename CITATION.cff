@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite the HOMER manuscript when using this work. This file provides a citation for its accompanying software."
+type: software
+title: "HOMER: Robust Estimation and Mean Inference via Smooth Aggregation"
+version: 0.1.0
+authors:
+  - family-names: You
+    given-names: Kisung
+    orcid: "https://orcid.org/0000-0002-8584-459X"
+license: MIT
+keywords:
+  - robust estimation
+  - divide-and-conquer inference
+  - subset aggregation
+abstract: "Reference implementation and reproducible experiments for smooth aggregation of subset estimates, with fixed-threshold mean inference and adaptive estimation examples."

@@ -1,0 +1,123 @@
+{
+  "array_files": {
+    "covariance_estimates.npz": {
+      "matched_arrays": 8
+    },
+    "covariance_inputs.npz": {
+      "matched_arrays": 4
+    },
+    "functional_pairing_concentrated_gaussian.npz": {
+      "matched_arrays": 4
+    },
+    "functional_pairing_concentrated_student_t4.npz": {
+      "matched_arrays": 4
+    },
+    "functional_pairing_diffuse_gaussian.npz": {
+      "matched_arrays": 4
+    },
+    "functional_pairing_diffuse_student_t4.npz": {
+      "matched_arrays": 4
+    }
+  },
+  "atol": 1e-12,
+  "csv_files": {
+    "covariance_paired_differences.csv": {
+      "excluded_timing_columns": [],
+      "matched_columns": 9,
+      "rows": 18
+    },
+    "covariance_replicates.csv.gz": {
+      "excluded_timing_columns": [],
+      "matched_columns": 31,
+      "rows": 4500
+    },
+    "covariance_summary.csv": {
+      "excluded_timing_columns": [],
+      "matched_columns": 24,
+      "rows": 9
+    },
+    "efficiency_ratio_concentrated.csv": {
+      "excluded_timing_columns": [],
+      "matched_columns": 7,
+      "rows": 6
+    },
+    "efficiency_ratio_diffuse.csv": {
+      "excluded_timing_columns": [],
+      "matched_columns": 7,
+      "rows": 6
+    },
+    "functional_inference_replicates.csv.gz": {
+      "excluded_timing_columns": [],
+      "matched_columns": 35,
+      "rows": 18000
+    },
+    "functional_inference_summary.csv": {
+      "excluded_timing_columns": [],
+      "matched_columns": 16,
+      "rows": 36
+    },
+    "functional_paired_differences.csv": {
+      "excluded_timing_columns": [],
+      "matched_columns": 9,
+      "rows": 140
+    },
+    "functional_point_replicates.csv.gz": {
+      "excluded_timing_columns": [],
+      "matched_columns": 27,
+      "rows": 70000
+    },
+    "functional_point_summary.csv": {
+      "excluded_timing_columns": [],
+      "matched_columns": 18,
+      "rows": 140
+    },
+    "population_target_crosscheck.csv": {
+      "excluded_timing_columns": [],
+      "matched_columns": 49,
+      "rows": 11
+    },
+    "scalar_replicates.csv.gz": {
+      "excluded_timing_columns": [],
+      "matched_columns": 46,
+      "rows": 52000
+    },
+    "scalar_summary.csv": {
+      "excluded_timing_columns": [],
+      "matched_columns": 19,
+      "rows": 156
+    },
+    "scalar_target_precision_audit.csv": {
+      "excluded_timing_columns": [],
+      "matched_columns": 10,
+      "rows": 11
+    },
+    "scalar_targets.csv": {
+      "excluded_timing_columns": [],
+      "matched_columns": 15,
+      "rows": 26
+    },
+    "wearable_results.csv": {
+      "excluded_timing_columns": [
+        "block_construction_seconds",
+        "preliminary_seconds",
+        "outer_seconds"
+      ],
+      "matched_columns": 23,
+      "rows": 210
+    }
+  },
+  "date": "2026-10-03",
+  "rtol": 1e-10,
+  "saved_figure_previews": {
+    "exp_covariance.png": true,
+    "exp_functional_wearable.png": true,
+    "exp_overview.png": true
+  },
+  "saved_tables": {
+    "covariance_table.tex": true,
+    "functional_coverage_table.tex": true,
+    "point_summary_table.tex": true,
+    "scalar_primary_table.tex": true,
+    "wearable_table.tex": true
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "seed": 20260917,
+  "replications": 500,
+  "dimension": 12,
+  "basis": "1, sqrt(2)cos(2pi*t),sqrt(2)sin(2pi*t),...,sqrt(2)cos(12pi*t)",
+  "spectra": {
+    "concentrated": "j^-3 normalized",
+    "diffuse": "1/12"
+  },
+  "mean": "zero Fourier coefficients",
+  "coefficient_laws": "independent Gaussian N(0,1), centered Exponential(1), or t4/sqrt(2), scaled by sqrt(eigenvalue)",
+  "contamination": "add magnitude e1 in coefficient space; same IDs at both magnitudes",
+  "runtime_seconds": 27.17372120800428,
+  "bootstrap_seed": 20270916,
+  "quantile_bootstrap_replicates": 2000,
+  "score_tolerance": 1e-12,
+  "geometric_subgradient_tolerance": 1e-10,
+  "certificate_se_fraction": 0.001,
+  "code_sha256": "048eb0f022947b093be8d81e710675fd94c1c5bde3e6676effe9cc9ad19e6f2c",
+  "contrasts": [
+    [
+      1.0,
+      -0.9003163161571062,
+      1.1025694948019366e-16,
+      5.512847474009681e-17,
+      0.0,
+      0.3001054387190354,
+      -1.1025694948019365e-16,
+      -5.512847474009681e-17,
+      0.0,
+      -0.18006326323142124,
+      2.70185254063125e-16,
+      5.5128474740096825e-17
+    ],
+    [
+      0.0,
+      -1.1102230246251565e-16,
+      -1.8006326323142123,
+      -4.4102779792077465e-16,
+      -1.8006326323142123,
+      -1.6653345369377348e-16,
+      -0.6002108774380707,
+      -6.162975822039155e-33,
+      0.0,
+      -2.498001805406602e-16,
+      -0.36012652646284293,
+      -4.410277979207746e-16
+    ],
+    [
+      1.0,
+      -2.4727803159540305e-16,
+      -1.3461189069238446,
+      -1.1608836730968644,
+      4.2650174233214914e-16,
+      4.998666936581794e-16,
+      0.9070491798691237,
+      0.642110570577969,
+      -4.718151929741943e-16,
+      -1.109836373253001e-15,
+      -0.41183727968971867,
+      -0.23931964306506276
+    ]
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "formula": "subject mean of window means of body_acc_x^2+body_acc_y^2+body_acc_z^2",
+  "units": "squared gravitational acceleration units as distributed",
+  "window_samples": 128,
+  "overlap": "50 percent; windows are not independent units",
+  "window_alignment": "energy is averaged within each window, requiring no phase alignment across subjects",
+  "input_sha256": {
+    "train/Inertial Signals/body_acc_x_train.txt": "89f7bf5e360384804439d00f463dd2f717c452c683cac6c0a09b1a191d8ce4a2",
+    "train/Inertial Signals/body_acc_y_train.txt": "4775a586a5a1acc6706edee08c685835daea7bc1d9274e7e7e8d660fea173944",
+    "train/Inertial Signals/body_acc_z_train.txt": "9155718981ff1331dcd2d30aee545905ffba71af9ece5a08d6dfdeeb7d2ec4fb",
+    "test/Inertial Signals/body_acc_x_test.txt": "c07eb8ee8c76eafcd94b42111082700e10f4956b769fbbb0d5413c14f38774fa",
+    "test/Inertial Signals/body_acc_y_test.txt": "0ed0057b41f6870b16a6953ef17f6d42bc5542fa304319fb6b7f424dd3380f0b",
+    "test/Inertial Signals/body_acc_z_test.txt": "a2b58317137533bdbf2342bf301ae854c15b1168259cc7b582c2dd131e3d81d5"
+  },
+  "source": "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones",
+  "historical_readme_license": "original README included in supplied archive says commercial use prohibited",
+  "current_portal_license": "CC BY 4.0, official portal checked September 2026"
+}

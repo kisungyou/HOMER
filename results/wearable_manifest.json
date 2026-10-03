@@ -1,0 +1,103 @@
+{
+  "seed": 20260918,
+  "subjects": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "blocks": [
+    [
+      12,
+      21,
+      6,
+      23,
+      8,
+      20
+    ],
+    [
+      10,
+      27,
+      9,
+      15,
+      5,
+      19
+    ],
+    [
+      22,
+      26,
+      13,
+      25,
+      28,
+      3
+    ],
+    [
+      30,
+      24,
+      17,
+      16,
+      11,
+      2
+    ],
+    [
+      7,
+      29,
+      18,
+      4,
+      1,
+      14
+    ]
+  ],
+  "one_block_affected": [
+    12,
+    21,
+    6,
+    23,
+    8,
+    20
+  ],
+  "dispersed_affected": [
+    12,
+    10,
+    22
+  ],
+  "activities": {
+    "1": "WALKING",
+    "2": "WALKING_UPSTAIRS",
+    "3": "WALKING_DOWNSTAIRS",
+    "4": "SITTING",
+    "5": "STANDING",
+    "6": "LAYING"
+  },
+  "paired": "same 30 participants, partitions, and affected participant IDs across all activities, thresholds, and magnitudes",
+  "inference": "none, descriptive stability only; sample provides 30 subject units and 5 block summaries",
+  "target": "equal-subject average of each subject average window-level body acceleration energy",
+  "data_usage": "Public anonymized IDs, no new recruitment; no independently verified consent or ethics-review details",
+  "code_sha256": "51bdc40780636541b5a15caae386900889c1e37e9b077e9f49b21ce6b4d54ebd"
+}
